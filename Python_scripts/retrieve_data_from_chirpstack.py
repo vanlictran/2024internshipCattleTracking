@@ -223,9 +223,10 @@ def data_fetching_loop():
             last_date = ret[3]
             print("[+] Data received: ", ret)
             state = detect_behavior(ret[:3])
-            if state == "IMMOBILE" and state_cow[-1]["state"] == "IMMOBILE":
+            '''if state == "IMMOBILE" and state_cow[-1]["state"] == "IMMOBILE":
                 print("The cow is in danger")
                 state = "DANGER"
+            '''
             print(f"[+] State of the cow : {state}")
             state_cow.append({"timestamp": last_date, "CardEUI": ret[4], "state": state})
             print(state_cow)
