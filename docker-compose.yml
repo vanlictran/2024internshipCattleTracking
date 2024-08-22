@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: simonbeurel/python_application_vietnam
+    ports:
+      - "8080:5000"
+    networks:
+      - webnet
+    restart: always
+
+  grafana:
+    image: simonbeurel/grafana_vietnam
+    ports:
+      - "3000:3000"
+    depends_on:
+      - webapp
+    networks:
+      - webnet
+    restart: always
+
+networks:
+  webnet:
