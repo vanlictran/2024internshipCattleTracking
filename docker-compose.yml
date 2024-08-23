@@ -12,7 +12,7 @@ services:
   grafana:
     image: simonbeurel/grafana_vietnam
     ports:
-      - "3000:3000"
+      - "3010:3000"
     depends_on:
       - webapp
     networks:
