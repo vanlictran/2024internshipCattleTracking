@@ -4,7 +4,8 @@ This part of the project is about the code which is used by our Card for sending
 The hardware of this project is simply a UCA Board where you can find more information about on the repository : https://github.com/FabienFerrero/UCA21. Linked to this card, you can find an accelerometer MPU6050 (https://nshopvn.com/product/cam-bien-gia-toc-gy-521-6dof-imu-mpu6050/) which is used for the detection of the cow's movement.
 
 If you want to link the sensor to the card, you just have to follow these connections:
-(INTEGRER UNE IMAGE DES BRANCHEMENTS)
+![](hardware_picture1.jpg)
+![](hardware_picture2.jpg)
 
 ## The code:
 For the code, I recommend to use ArduinoIDE which is one of the best IDE for this kind of project. On ArduinoIDE, you can find different libraries which are useful for the project, I recommend you to install these libraries:
